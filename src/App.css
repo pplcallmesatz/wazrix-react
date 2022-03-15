@@ -1,0 +1,178 @@
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #3067f0;
+  color: #ffffff;
+}
+.box{
+
+}
+.img-responsive{
+  max-height: 60px;
+}
+.head-con{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.head-con p{
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.image-con{
+
+}
+.cp, .op{
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: #ffffff;
+  color: #ffffff;
+  border-radius: 30px;
+  font-weight: bold;
+}
+.op{
+  color: #3067f0;
+}
+.pl{
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 30px;
+  background-color: #3067f0 ;
+  font-weight: bold;
+}
+.pl >span{
+  display: inline-block;
+}
+.pl >span:first-child{
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 4px 8px;
+  border-radius: 30px;
+}
+.l{
+  background-color: #f7564a !important;
+}
+.p{
+  background-color: #4caf50 !important;
+}
+.flexBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.box{
+  width: 100%;
+  border-radius: 8px;
+  background: #ffffff;
+  margin-bottom: 30px;
+  color: #333333;
+  padding: 20px 10px;
+  box-shadow: 0px 15px 30px rgb(10 18 39 / 30%);
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .box{
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media (min-width: 1220px) {
+  .box{
+    width: calc((100% - 60px) / 3);
+  }
+}
+.box-content{
+  display: flex;
+  display: -webkit-flex;
+}
+.coinName span{
+  display: block;
+  text-transform: uppercase;
+}
+.coinName{
+  text-align: center;
+}
+.coinName .per{
+}
+.coinName span{
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 3px;
+  display: block;
+}
+.coinName img{
+    width: 25px;
+}
+.coin-details{
+  flex-grow: 1;
+  position: relative;
+  padding-left: 10px;
+}
+.percentage{
+
+}
+.investmentDetails, .coinDetails{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.coinDetails{
+  margin-bottom: 0px;
+}
+.investmentDetails > div, .coinDetails > div{
+  position: relative;
+  text-align: center;
+  width: calc(100% / 3);
+  padding-bottom: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.investmentDetails > div:before, .coinDetails > div:before{
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  color: rgb(51,51,51);
+  font-weight: normal;
+}
+.totalCurrentCoinValue:before{
+  content: "Current Value";
+}
+.totalInversedValue:before{
+  content: "Total Invested";
+}
+.gainLoss.l:before{
+  content: "Total Loss";
+}
+.gainLoss.p:before{
+  content: "Total Profit";
+}
+.gainLoss span{
+  display: block;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.currentCoinValue:before{
+  content: "Current Price";
+}
+.TotalCoinPurchased:before{
+  content: "Total Coins";
+}
+.averagePurchasePrice:before{
+  content: "Avg P.Price";
+}
+.box .p{
+  background-color: #ffffff !important;
+  color: #4caf50;
+  font-weight: bold;
+}
+.box .l{
+  background-color: #ffffff !important;
+  color: #f7564a;
+  font-weight: bold;
+}
